@@ -1,1 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>亚裔民权联合会 | Asian Civil Rights Alliance</title>
+	<meta name="keywords" content="亚裔民权联合会 华人互助 " />
+<meta name="description" content="站在一起，看见彼此！让每一位亚裔在美国都能活得更有底气、更有尊严。" />
+	
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+	<script>
+		tailwind.config = {
+		    theme: {
+		        extend: {
+		            colors: {
+		                primary: '#1e3a8a', 
+		                secondary: '#d97706', 
+		                light: '#f3f4f6',
+		                dark: '#111827',
+		            },
+		            fontFamily: {
+		                sans: ['"Noto Sans SC"', 'sans-serif'],
+		                serif: ['"Playfair Display"', 'serif'],
+		            }
+		        }
+		    }
+		}
+	</script>
+	<style>
+		html { scroll-behavior: smooth; }
+		.hero-pattern {
+		    background-color: black;
+		    background-image: url(img/bg2.png);
+		    
+		    background-position: center;
+  /* 防止图片重复 */
+            background-repeat: no-repeat;
+		    
+		}
+		.service-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+		.service-card:hover {
+		    transform: translateY(-5px);
+		    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+		}
+		.mobile-menu { transition: max-height 0.3s ease-in-out; max-height: 0; overflow: hidden; }
+		.mobile-menu.active { max-height: 600px; }
+	</style>
+</head>
+<body class="font-sans text-gray-700 bg-gray-50 antialiased">
+	<nav class="bg-white shadow-md fixed w-full z-50 top-0">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="flex justify-between h-20">
+				<div class="flex items-center">
+					<div class="flex-shrink-0 flex items-center gap-3">
+						<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white text-xl">
+						<img src="img/logo.png" alt="ACRA Logo" class="w-12 h-12 object-contain">
+						</div>
+						<div>
+							<h1 class="text-lg font-bold text-primary leading-tight">亚裔民权联合会</h1>
+							<p class="text-xs text-gray-500 font-medium">Asian Civil Rights Alliance</p>
+						</div>
+					</div>
+				</div>
+				<div class="hidden md:flex items-center space-x-6">
+					<a href="#about" class="text-gray-600 hover:text-primary transition font-medium text-sm">我们是谁 / Who We Are</a>
+					<a href="#why" class="text-gray-600 hover:text-primary transition font-medium text-sm">成立初衷 / Our Mission</a>
+					<a href="#services" class="text-gray-600 hover:text-primary transition font-medium text-sm">服务内容 / Services</a>
+					<a href="#membership" class="text-gray-600 hover:text-primary transition font-medium text-sm">互助机制 / Membership</a>
+					<a href="#contact" class="bg-primary hover:bg-blue-800 text-white px-4 py-2 rounded-full transition font-medium text-sm">联系我们 / Contact</a>
+				</div>
+				<div class="md:hidden flex items-center">
+					<button onclick="toggleMenu()" class="text-gray-600 hover:text-primary focus:outline-none">
+						<i class="fa-solid fa-bars text-2xl"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div id="mobileMenu" class="mobile-menu md:hidden bg-white border-t border-gray-100">
+			<div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-sm">
+				<a href="#about" onclick="toggleMenu()" class="block px-3 py-2 rounded-md font-medium">我们是谁 / Who We Are</a>
+				<a href="#why" onclick="toggleMenu()" class="block px-3 py-2 rounded-md font-medium">成立初衷 / Our Mission</a>
+				<a href="#services" onclick="toggleMenu()" class="block px-3 py-2 rounded-md font-medium">服务内容 / Services</a>
+				<a href="#membership" onclick="toggleMenu()" class="block px-3 py-2 rounded-md font-medium">互助机制 / Membership</a>
+				<a href="#contact" onclick="toggleMenu()" class="block px-3 py-2 rounded-md text-primary font-bold">立即加入 / Join Now</a>
+			</div>
+		</div>
+	</nav>
+	<header class="hero-pattern pt-32 pb-24 lg:pt-48 lg:pb-32 text-white relative">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+			<div class="inline-block px-4 py-1.5 bg-blue-800 bg-opacity-50 rounded-full border border-blue-400 mb-6 backdrop-blur-sm">
+				<span class="text-sm font-semibold tracking-wide uppercase text-white-100">A Grassroots Non-Profit Organization Based in the U.S.</span>
+			</div>
+			<h1 class="text-3xl md:text-5xl font-serif font-bold mb-6 leading-tight"> 站在一起，看见彼此 <br>
+				<span class="text-secondary block mt-2">Stand Together, See Each Other</span>
+			</h1>
+			<p class="text-lg md:text-xl text-white-100 max-w-4xl mx-auto mb-6 font-light"> 一个立足美国，向亚裔提供社群支持和民权倡导的草根非盈利机构。 </p>
+			<p class="text-lg md:text-xl text-white-100 max-w-4xl mx-auto mb-10 font-light italic"> A grassroots non-profit organization based in the U.S., providing support and advancing civil rights for Asian communities. </p>
+			<div class="flex flex-col sm:flex-row justify-center gap-4">
+				<a href="#membership" class="bg-secondary hover:bg-amber-600 text-white text-lg font-bold px-8 py-3 rounded-full transition shadow-lg transform hover:-translate-y-1"> 加入我们 / Join Us </a>
+				<a href="#why" class="bg-white bg-opacity-10 hover:bg-opacity-20 text-white border border-white text-lg font-medium px-8 py-3 rounded-full transition backdrop-blur-sm"> 了解更多 / Learn More </a>
+			</div>
+		</div>
+		<div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none rotate-180">
+			<svg class="relative block w-[calc(100%+1.3px)] h-[60px]" viewBox="0 0 1200 120" preserveAspectRatio="none">
+				<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-gray-50"></path>
+			</svg>
+		</div>
+	</header>
+	<section id="about" class="py-20 bg-gray-50">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="text-center mb-16">
+				<h2 class="text-3xl font-bold text-gray-900 mb-4">我们是谁 / Who We Are</h2>
+				<div class="w-24 h-1 bg-secondary mx-auto rounded"></div>
+			</div>
+			<div class="grid md:grid-cols-2 gap-12 items-start">
+				<div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-primary space-y-6">
+					<p class="text-gray-700 leading-relaxed text-lg"> 我们是一群关注社会正义、从事各行各业的<strong>社区服务者</strong>。我们并非政府机构，也不是商业组织，而是基于共同经验与责任感自发聚集的草根群体。 </p>
+					<p class="text-gray-700 leading-relaxed text-lg italic"> We are a group of community-based individuals from diverse professional backgrounds who share a commitment to social justice. We are neither a government agency nor a commercial entity. We are a grassroots collective formed through shared experience and a sense of responsibility.
+ </p>
+				</div>
+				<div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-secondary space-y-6">
+					<p class="text-gray-700 leading-relaxed text-lg"> 
+					我们来自不同背景，但都有一个共同的认知：在关键时刻，一条清晰的信息、一个能拨打的号码、一个愿意回应的组织，往往能改变一个人乃至一个家庭的处境。
 
+					
+					</p>
+					<p class="text-gray-700 leading-relaxed text-lg italic"> Although our backgrounds differ, we are united by a common understanding: in moments of crisis, a single piece of accurate information, a reachable phone number, or a responsive organization can fundamentally change the outcome for an individual or an entire family.
+ </p>
+					
+						<p class="text-gray-700 leading-relaxed text-lg"> 我们希望成为连接、支持与行动的起点，让一个个真实的人不必独自挣扎在绝境里，让你在最难的时刻，知道自己不是一个人。 </p>
+					<p class="text-gray-700 leading-relaxed text-lg italic"> We aim to be a point of connection, support, and action—so that real people do not have to struggle alone in desperate situations, and so that when things are at their hardest, you know you are not alone.
+ </p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="why" class="py-20 bg-white">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div style="background-color: #1e6f8a"; class=" rounded-3xl overflow-hidden shadow-2xl">
+				<div class="grid lg:grid-cols-2">
+					<div class="p-10 lg:p-16 text-white flex flex-col justify-center space-y-6">
+						<h2 class="text-2xl font-bold">我们为什么成立？/ Why We Were Founded</h2>
+						<div class="space-y-4 text-white-100 leading-relaxed text-lg">
+							<p>
+							    
+							    亚裔群体在美国作为有色的少数族裔可能会遇到各种难题。尤其是当新移民来到陌生的环境时，常常会有语言障碍、法律知识匮乏、社会保障体系不熟悉等问题，以至在遇到突发状况时无所适从。比如在面对执法人员时，不清楚如何行使自己的基本权利；在遇到紧急情况时，无法及时联系到合适的法律援助或社会资源。
+
+							    
+							    </p>
+							<p class="italic">
+							   As a racialized minority group in the United States, Asian communities often face a wide range of challenges. For new immigrants in particular, unfamiliar environments can bring language barriers, limited legal knowledge, and a lack of understanding of social and legal systems. When unexpected situations arise, this often leaves people unsure of how to respond.For example, many do not know how to assert their basic rights when encountering law enforcement, or whom to contact for timely legal assistance or social support during emergencies.
+
+							   </p>
+							<p>
+							    而随着政策的浮动，新移民突然遭遇拘捕和被遣返的风险正在加大，当没有足够的准备和可信任的社群支持时，很容易会陷入孤立无助的境地。
+							    </p>
+							<p class="italic">
+							    
+As immigration policies continue to shift, the risks of sudden detention and deportation for new immigrants have increased. Without adequate preparation or a trusted community support system, individuals can easily become isolated and helpless in moments of crisis.
+</p>
+							<p>
+							    我们成立此组织，正是希望能为新移民建立互助网络、提供有效的预案和应对机制，确保在危难时刻彼此能得到帮扶。
+
+							    </p>
+							<p class="italic">
+							    We founded this organization to build a mutual-aid network for immigrants—one that provides practical preparation, clear response mechanisms, and dependable support—so that in critical moments, people are not left to face danger alone.
+</p>
+						</div>
+					</div>
+					<div class="relative h-64 lg:h-auto bg-gray-800">
+						<div class="absolute inset-0 bg-cover bg-center opacity-40" style="background-image: url('img/bg3.png');"></div>
+						<div class="absolute inset-0 flex flex-col items-center justify-center p-8 text-center">
+							<i class="fa-solid fa-shield-halved text-6xl text-secondary mb-4"></i>
+							<p class="text-white text-xl font-medium">不再独自挣扎 <br> No Longer Struggling Alone</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="services" class="py-20 bg-gray-50">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="text-center mb-16">
+				<h2 class="text-3xl font-bold text-gray-900 mb-4">我们做什么？/ What We Do</h2>
+			</div>
+			<div class="grid md:grid-cols-2 gap-8">
+				<div class="service-card bg-white rounded-xl shadow-md p-6 border-t-4 border-primary">
+					<div class="flex items-start gap-4">
+						<div class="w-12 h-12 bg-blue-50 rounded-lg flex-shrink-0 flex items-center justify-center text-primary">
+							<i class="fa-solid fa-phone-volume text-xl"></i>
+						</div>
+						<div class="space-y-3">
+							<h3 class="text-lg font-bold text-gray-900">紧急联系与响应 / Emergency Response</h3>
+							<p class="text-gray-600 text-lg leading-relaxed"> 加入我们的紧急联系人和响应系统，确保在突发事件中，至少有一个可靠的人了解你的情况，并能为你采取必要行动。</p>
+							<p class="text-gray-500 text-lg italic leading-relaxed">Access to our emergency contact and response system, ensuring that in urgent situations, at least one reliable party is aware of your circumstances and able to take appropriate action.</p>
+						</div>
+					</div>
+				</div>
+				<div class="service-card bg-white rounded-xl shadow-md p-6 border-t-4 border-secondary">
+					<div class="flex items-start gap-4">
+						<div class="w-12 h-12 bg-amber-50 rounded-lg flex-shrink-0 flex items-center justify-center text-secondary">
+							<i class="fa-solid fa-link text-xl"></i>
+						</div>
+						<div class="space-y-3">
+							<h3 class="text-lg font-bold text-gray-900">资源协调 / Resource Coordination</h3>
+							<p class="text-gray-600 text-lg leading-relaxed">在紧急情况下，我们会帮助协调联系相关社区应急响应者， 确保在你无法自主发声时，仍然能连接到外界资源。</p>
+							<p class="text-gray-500 text-lg italic leading-relaxed">Coordination with trusted community responders during emergencies, so that even if you cannot speak or advocate for yourself, you remain connected to outside resources.</p>
+						</div>
+					</div>
+				</div>
+				<div class="service-card bg-white rounded-xl shadow-md p-6 border-t-4 border-primary">
+					<div class="flex items-start gap-4">
+						<div class="w-12 h-12 bg-blue-50 rounded-lg flex-shrink-0 flex items-center justify-center text-primary">
+							<i class="fa-solid fa-info-circle text-xl"></i>
+						</div>
+						<div class="space-y-3">
+							<h3 class="text-lg font-bold text-gray-900">风险应对信息 / Risk Information</h3>
+							<p class="text-gray-600 text-lg leading-relaxed">即时获取应对风险的必要信息，介绍可信的法律与公益资源。</p>
+							<p class="text-gray-500 text-lg italic leading-relaxed">Timely access to critical risk-response information, including referrals to reliable legal and nonprofit resources.</p>
+						</div>
+					</div>
+				</div>
+				<div class="service-card bg-white rounded-xl shadow-md p-6 border-t-4 border-secondary">
+					<div class="flex items-start gap-4">
+						<div class="w-12 h-12 bg-amber-50 rounded-lg flex-shrink-0 flex items-center justify-center text-secondary">
+							<i class="fa-solid fa-users text-xl"></i>
+						</div>
+						<div class="space-y-3">
+							<h3 class="text-lg font-bold text-gray-900">线上线下活动 / Activities</h3>
+							<p class="text-gray-600 text-lg leading-relaxed">优先参与权益普法讲座、社区互助联谊、在地草根行动等。</p>
+							<p class="text-gray-500 text-lg italic leading-relaxed">Priority access to our online and in-person programs, such as Know-Your-Rights workshops, community mutual-aid gatherings, and local grassroots actions.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="membership" class="py-20 bg-white">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="max-w-5xl mx-auto bg-gradient-to-br from-primary to-blue-900 rounded-3xl shadow-2xl overflow-hidden text-white relative">
+				<div class="grid md:grid-cols-2" style="background-color: #5f87;">
+					<div class="p-10 md:p-14 space-y-6">
+						<h2 class="text-2xl font-bold">会员互动机制 / Membership</h2>
+						<p class="text-white-200 text-lg leading-relaxed"> 这不是购买服务，而是让身处高风险的人群能共同建立一个长期存在、值得信任的支持网络。 </p>
+						<p class="text-white-200 text-lg italic leading-relaxed"> This is not a purchase of services. It is a collective effort by people in higher-risk situations to build a long-term, trustworthy support system together.
+ </p>
+						<div class="flex items-baseline gap-2">
+							<span class="text-5xl font-bold text-secondary">$10</span>
+							<span class="text-lg text-white-200">/ 月费 Monthly Fee</span>
+						</div>
+						<p class="text-sm text-white-300 italic">我们采用会员制互助模式，成员月费 10 美元，用于维持组织运作和互助体系的可持续性。 / We operate through a membership-based mutual aid system. Members contribute a monthly fee of $10, which supports the sustainability of our operations and response network.
+</p>
+					</div>
+					<div class="bg-black bg-opacity-20 p-10 md:p-14 space-y-6">
+						<h3 class="text-xl font-bold border-b border-blue-700 pb-3">加入我们 / Join Us As:</h3>
+						<ul class="space-y-3 text-lg">
+							<li class="flex items-center gap-3">
+								<i class="fa-solid fa-check text-secondary"></i>
+								<span>会员 / Member</span>
+							</li>
+							<li class="flex items-center gap-3">
+								<i class="fa-solid fa-check text-secondary"></i>
+								<span>志愿者 / Volunteer</span>
+							</li>
+							<li class="flex items-center gap-3">
+								<i class="fa-solid fa-check text-secondary"></i>
+								<span>捐助者 / Donor</span>
+							</li>
+							<li class="flex items-center gap-3">
+								<i class="fa-solid fa-check text-secondary"></i>
+								<span>资源提供者 / Resource Provider</span>
+							</li>
+						</ul>
+						<div class="pt-4">
+							<a href="https://www.zeffy.com/en-US/ticketing/asian-civil-rights-alliance-inc-mutual-aid-plans"  target="_blank" class="inline-block bg-secondary hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-full transition shadow-lg w-full text-center"> 立即支持 / Support Now </a>
+						</div>
+						
+						<p class="text-sm text-white-300 italic">我们也感谢来自社会各界的热心捐助。每一份支持，都是这张安全网的一部分。 / We are also deeply grateful for donations from supporters across the broader community. Every contribution strengthens this shared safety net.
+
+</p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="contact" class="py-20 bg-gray-50">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="text-center mb-16">
+				<h2 class="text-3xl font-bold text-gray-900 mb-4">联系我们 / Contact Us</h2>
+				<p class="text-gray-600 text-lg">让我们站在一起，把互助和温暖变成常态 <br>
+				Let's stand together. Let's make mutual support and warmth the new normal.</p>
+			</div>
+			<div class="grid md:grid-cols-3 gap-8 text-center">
+				<div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 space-y-4">
+					<div class="w-12 h-12 bg-blue-100 rounded-full mx-auto flex items-center justify-center text-primary">
+						<i class="fa-solid fa-envelope"></i>
+					</div>
+					<h4 class="font-bold">邮箱 / Email</h4>
+					<p class="text-lg text-gray-900">info@acralliance.org</p>
+				</div>
+				<div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 space-y-4">
+					<div class="w-12 h-12 bg-blue-100 rounded-full mx-auto flex items-center justify-center text-primary">
+						<i class="fa-solid fa-phone"></i>
+					</div>
+					<h4 class="font-bold">电话 / Phone</h4>
+					<p class="text-lg text-gray-900"><a href="tel:6468380606">646-838-0606</a></p>
+				</div>
+				<div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 space-y-4">
+					<div class="w-12 h-12 bg-green-100 rounded-full mx-auto flex items-center justify-center text-green-600">
+						<i class="fa-brands fa-weixin"></i>
+					</div>
+					<h4 class="font-bold">微信 / WeChat</h4>
+					<p class="text-lg text-gray-900">acralliance</p>
+				</div>
+			</div>
+			<div class="mt-12 flex justify-center gap-6">
+				<div class="text-center">
+					<p class="text-gray-500 font-bold mb-4">关注社交媒体 / Follow Us</p>
+					<div class="flex gap-4">
+						<a href="https://www.instagram.com/acra_community" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-pink-500 hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://x.com/acralliance" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-black hover:text-white transition"><svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+  <path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"/>
+</svg>
+</a>
+						<a href="https://bsky.app/profile/acralliance.bsky.social" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-blue-400 hover:text-white transition">
+						    
+						    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM224 247.4c14.5-30 54-85.8 90.7-113.3 26.5-19.9 69.3-35.2 69.3 13.7 0 9.8-5.6 82.1-8.9 93.8-11.4 40.8-53 51.2-90 44.9 64.7 11 81.2 47.5 45.6 84-67.5 69.3-97-17.4-104.6-39.6l-.3-.9c-.9-2.6-1.4-4.1-1.8-4.1s-.9 1.5-1.8 4.1c-.1 .3-.2 .6-.3 .9-7.6 22.2-37.1 108.8-104.6 39.6-35.5-36.5-19.1-73 45.6-84-37 6.3-78.6-4.1-90-44.9-3.3-11.7-8.9-84-8.9-93.8 0-48.9 42.9-33.5 69.3-13.7 36.7 27.5 76.2 83.4 90.7 113.3z"/></svg>
+						    
+						    </a>
+					</div>
+					<p class="mt-4 text-sm text-gray-400">Ins: @acra_community </p>
+					<p class="mt-4 text-sm text-gray-400">Twitter: acralliance</p>
+					<p class="mt-4 text-sm text-gray-400">Bluesky: acralliance.bsky.social</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="bg-gray-900 text-gray-400 py-12">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+			<p class="text-white text-lg font-bold mb-4">亚裔民权联合会 / Asian Civil Rights Alliance</p>
+			<div class="border-t border-gray-800 pt-8 text-sm">
+				
+				
+				<p>
+				    站在一起，看见彼此！
+				    <br>
+				    让每一位亚裔在美国都能活得更有底气、更有尊严。
+				    </p>
+				<p class="mt-2 italic">
+				    Stand Together. See Each Other！ <br>
+				    So every Asian person in America can live with more confidence and dignity.
+				    </p>
+				    
+				    <p>&copy; 2026 ACRA. </p>
+			</div>
+		</div>
+	</footer>
+	<script>
+		function toggleMenu() {
+		    document.getElementById('mobileMenu').classList.toggle('active');
+		}
+		window.addEventListener('scroll', function() {
+		    const nav = document.querySelector('nav');
+		    window.scrollY > 10 ? nav.classList.add('shadow-lg') : nav.classList.remove('shadow-lg');
+		});
+	</script>
+</body>
+</html>
